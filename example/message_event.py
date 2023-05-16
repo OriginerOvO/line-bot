@@ -24,7 +24,7 @@ line_bot_api = LineBotApi("CHANNEL_ACCESS_TOKEN")
 handler = WebhookHandler("CHANNEL_SECRET")
 
 # 監聽所有來自 /callback 的 Post Request
-@app.route("/callback", methods=['POST'])
+@app.route("/callback", methods=["POST"])
 def callback():
     # Get X-Line-Signature header value
     signature = request.headers["X-Line-Signature"]
@@ -47,7 +47,7 @@ def callback():
         # 處理錯誤，abort 400。
         abort(400)
     # 返回 OK，LINE Developers 收到 OK 後代表 Webhook 執行沒問題
-    return 'OK'
+    return "OK"
         
     
 if __name__ == "__main__":
