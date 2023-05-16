@@ -27,7 +27,7 @@ handler = WebhookHandler("CHANNEL_SECRET")
 @app.route("/callback", methods=['POST'])
 def callback():
     # Get X-Line-Signature header value
-    signature = request.headers['X-Line-Signature']
+    signature = request.headers["X-Line-Signature"]
     # 將接收到的請求轉換為文字
     body = request.get_data(as_text=True)
     # 將接收到的資訊轉為 JSON 格式
