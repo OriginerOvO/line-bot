@@ -1,2 +1,2 @@
 # line-bot
-Some line-bot example.
+Some line bot example.
