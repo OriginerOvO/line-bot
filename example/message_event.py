@@ -32,7 +32,7 @@ def callback():
     body = request.get_data(as_text=True)
     # 將接收到的資訊轉為 JSON 格式
     json_data = json.loads(body)
-    # 格式化 json_data 讓輸儲結果增加可讀性
+    # 格式化 json_data 讓輸出結果增加可讀性
     json_str = json.dumps(json_data, indent=4)
     # 印出來檢視一下
     print(json_str)
