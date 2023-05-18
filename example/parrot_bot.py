@@ -12,6 +12,8 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage,
 )
+# 載入 json 模組（此用於格式化輸出結果）
+import json
 
 # 建立 application 物件
 app = Flask(__name__)
